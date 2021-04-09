@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    border-style: none;
+    text-decoration: none;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 50px 0 0 50px;
+    font-size: 2rem;
+    
+
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 90vh;
+    background-color:green;
+    
+}
+div#calculadora{
+    box-shadow: 0 0 35px rgba(0, 44, 17, 0.753);
+    background-color:rgba(255, 255, 255, 0);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+div#calculadora div{
+      display: flex;
+}
+
+input[type="button"] {
+    width: 200px;
+    height: 75px;
+    margin: 5px 5px 5px 5px;
+    font-size:2rem;
+    background-color:#dfdddd;
+    cursor: pointer;
+    
+}
+
+input[type="text"] {
+    width: 830px;
+    height: 75px;
+    align-items: center;
+    margin-left: 5px;
+    text-align: center;
+    font-size:2rem;
+    background-color: #ffffff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+   
+}
+div#calculadora div input:nth-child(4){
+    background-color:rgb(204, 200, 200);
+    
+}
+div#quarta input:nth-child(1), div#calculadora{
+    border-bottom-left-radius: 30px;
+}
+div#quarta input:nth-child(1){
+    background-color:#ff0101c2;
+    
+}
+div#quarta input:nth-child(3){
+    background-color:#460c55d7;
+    
+} 
+div#quarta input:nth-child(4), div#calculadora{
+    border-bottom-right-radius: 30px;
+}
+div#quarta input:nth-child(4){
+    
+    border-bottom-right-radius: 30px;
+}
+
+input[type=button]:hover{
+    filter:brightness(50%);
+    transition: ease 1s;
+    
+}
+input[type=button]:active{
+    transform: scale(0.95);
+    transition: ease 0.3s;
+}
